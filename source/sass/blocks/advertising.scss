@@ -1,18 +1,14 @@
 .advertising {
+  position: relative;
 
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: -1;
-
-      height: 305px;
-
-      background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center top;
-
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 305px;
+    background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center top;
   }
 }
