@@ -1,0 +1,28 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "variables";
+@import "fonts";
+
+@import "global";
+
+@import "blocks/page-wrapper";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/page-main";
+@import "blocks/advertising";
+@import "blocks/button";
+@import "blocks/cases.scss";
+@import "blocks/advantages.scss";
+@import "blocks/story.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/logo-footer.scss";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright.scss";
+
+@import"blocks/page-form.scss";
+@import"blocks/product-catalog.scss";
+@import"blocks/additional-products.scss";
