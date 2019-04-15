@@ -1,19 +1,57 @@
+.story {
+  overflow: hidden;
+  background: $color-gray;
+}
+
+.story__wrapper {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
 .story__title {
   font-size: 36px;
   line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .story__text {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  font-family: $secondary-font;
 }
+
+.example__result-name {
+  line-height: 1;
+  font-family: $secondary-font;
+}
+
+.example__result-amount {
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+}
+
+.example__result--cost {
+  width: 190px;
+  margin: 0 auto;
+
+  .example__result-name,
+  .example__result-amount {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
 //story__facts-list
 //story__fact
 //story__fact--cell
-//story__fact-name
-//story__fact-amount
-//story__facts--cost
 //story__slider
-//story
-//story__wrapper
