@@ -1,7 +1,11 @@
 //page-header
 //page-header__wrapper
 //page-header__logo
-//page-header__logo-image
+.page-header__logo-image {
+  width: 33px;
+  height: 38px;
+}
+
 .page-header {
   padding-top: 15px;
   border-bottom: 1px solid #e6e6e6;

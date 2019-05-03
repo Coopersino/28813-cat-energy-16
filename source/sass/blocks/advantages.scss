@@ -1,6 +1,10 @@
 .advantages__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 1.6;
+  color: #000000;
 }
 
 .advantages-list {
@@ -21,10 +25,8 @@
     content: "";
     position: absolute;
     left: 0;
-
     width: 60px;
     height: 60px;
-
     background: $color-accent;
     background-repeat: no-repeat;
     background-position: center center;
