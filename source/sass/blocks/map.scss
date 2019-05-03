@@ -4,3 +4,17 @@
   margin: 0 auto;
   background: #fdf7ef url("../img/bg-map-mobile@1x.png") no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .map {
+    height: 400px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+}

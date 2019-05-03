@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper  page-wrapper--index">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -17,7 +17,7 @@
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню
           </button>
-          <div class="main_nav__wrapper">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
                 <a class="site-list__link" href="#">Главная</a>
@@ -37,14 +37,14 @@
     <main class="page-main">
       <section class="advertising">
         <div class="advertising__wrapper">
-          <h1 class="page-main__title">
+          <h1 class="advertising__title">
             Функциональное питание для котов
           </h1>
-          <span class="page-main__slogan">
+          <span class="advertising__slogan">
             Занялся собой? Займись котом!
           </span>
-          <img class="page-main__image" src="img/index-can-mobile@1x.png" alt="cat">
-          <a class="button">
+          <img class="advertising__image" src="img/index-can-mobile@1x.png" alt="cat">
+          <a class="advertising__button  button">
             Подобрать программу
           </a>
         </div>
@@ -53,7 +53,6 @@
         <div class="cases__wrapper">
           <ul class="cases-list">
             <li class="cases__item">
-              <img class="case__img" src="http://placehold.it/35x49" width="35" height="49" alt="loose-weight">
               <h3 class="case__title">Похудение</h3>
               <p class="case__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
@@ -63,7 +62,6 @@
               <a class="case__link">Каталог Slim</a>
             </li>
             <li class="cases__item">
-              <img class="case__img" src="http://placehold.it/67x28" width="67" height="28" alt="get-weight">
               <h3 class="case__title">Набор массы</h3>
               <p class="case__text">
                 Заработать авторитет среди дворовых котов и даже собак?
@@ -79,25 +77,21 @@
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages-list">
             <li class="advantages__item  advantages__item--leaf">
-              <!-- <img class="advantage__img" src="http://placehold.it/60x60" width="60" height="60" alt="meal"> -->
               <p class="advantage__text">
                 Функциональное питание содержит только полезные питательные вещества.
               </p>
             </li>
             <li class="advantages__item  advantages__item--powder">
-              <!-- <img class="advantage__img" src="http://placehold.it/60x60" width="60" height="60" alt="meal"> -->
               <p class="advantage__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </p>
             </li>
             <li class="advantages__item  advantages__item--dining">
-              <!-- <img class="advantage__img" src="http://placehold.it/60x60" width="60" height="60" alt="meal"> -->
               <p class="advantage__text">
                 Замените один-два приема обычной еды на наше функциональное питание.
               </p>
             </li>
             <li class="advantages__item  advantages__item--clock">
-              <!-- <img class="advantage__img" src="http://placehold.it/60x60" width="60" height="60" alt="meal"> -->
               <p class="advantage__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
@@ -154,12 +148,14 @@
       </section>
       <section class="contacts  contacts--main-page">
         <div class="contacts__wrapper">
-          <div class="contacts__address">
-            <b class="contacts__message">приглашаем к сотрудничеству дилеров!</b>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-          <div class="contacts__map">
-            <div class="map"></div>
+          <div class="contacts__inner">
+            <div class="contacts__address">
+              <b class="contacts__message">приглашаем к сотрудничеству дилеров!</b>
+              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+            <div class="contacts__map">
+              <div class="map"></div>
+            </div>
           </div>
       </section>
     </main>
@@ -187,7 +183,7 @@
             </li>
           </ul>
         </div>
-        <a class="page-footer__copyright copyright">
+        <a class="page-footer__copyright  copyright" href="https://htmlacademy.ru">
           <span class="copyright__name">HTML Academy</span>
           <img class="copyright__icone" src="http://placehold.it/27x34">
         </a>
