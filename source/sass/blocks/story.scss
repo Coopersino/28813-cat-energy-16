@@ -26,32 +26,47 @@
   font-family: $secondary-font;
 }
 
-.example__result-name {
-  line-height: 1;
-  font-family: $secondary-font;
+.story__facts-list {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
 }
 
-.example__result-amount {
-  font-size: 24px;
-  line-height: 1;
-  color: #000000;
+.story__fact {
+  display: flex;
 }
 
-.example__result--cost {
-  width: 190px;
-  margin: 0 auto;
+.story__fact--cell {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 44.29%;
+  margin-bottom: 35px;
+  padding: 14px;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
-  .example__result-name,
-  .example__result-amount {
-    font-size: 14px;
-    line-height: 1.4;
-    font-family: "Oswald", "Arial", sans-serif;
-    color: #000000;
-    text-transform: uppercase;
+  .story__fact-name {
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    width: 87px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+    text-transform: lowercase;
+    background: $color-gray;
+    transform: translateX(-50%);
+  }
+
+  .story__fact-amount {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
   }
 }
 
-//story__facts-list
-//story__fact
-//story__fact--cell
+
 //story__slider
