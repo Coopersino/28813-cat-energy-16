@@ -3,9 +3,11 @@
   display: flex;
   flex-direction: column;
 }
+
 @media (min-width: $desktop-width) {
   .page-wrapper--index {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
