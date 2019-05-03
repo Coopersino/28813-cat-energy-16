@@ -1,3 +1,26 @@
 //copyright
 //copyright__name
 //copyright__icone
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.copyright__name {
+  font-size: 16px;
+  line-height: 1;
+  font-family: $secondary-font;
+  color: $color-font;
+}
+
+.copyright__icone {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
+}

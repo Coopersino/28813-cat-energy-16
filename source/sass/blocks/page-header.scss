@@ -2,3 +2,32 @@
 //page-header__wrapper
 //page-header__logo
 //page-header__logo-image
+.page-header {
+  padding-top: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-bottom: 15px;
+    border-bottom: none;
+  }
+
+  .page-header__wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 54px;
+  }
+
+  .page-header__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

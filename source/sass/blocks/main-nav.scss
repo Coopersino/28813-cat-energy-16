@@ -2,3 +2,41 @@
 //main-nav__toggle
 //main_nav__wrapper
 //main-nav__list
+.main-nav__wrapper {
+  position: relative;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  display: block;
+  width: 24px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 465px;
+  }
+}

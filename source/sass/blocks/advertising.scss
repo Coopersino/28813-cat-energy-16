@@ -9,6 +9,79 @@
     left: 0;
     z-index: -1;
     height: 305px;
-    background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+    background: $color-index-bg url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+  }
+}
+
+.advertising__wrapper {
+  padding-top: 37px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.advertising__title {
+  color: $color-white;
+  font-size: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.advertising__slogan {
+  line-height: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.advertising__image {
+  margin: 0 auto;
+}
+
+.advertising__button {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertising__wrapper {
+    padding-right: 120px;
+    padding-bottom: 530px;
+    padding-left: 120px;
+  }
+
+  .advertising__title {
+    width: 427px;
+    color: $color-black;
+  }
+
+  .advertising__slogan {
+    font-size: 20px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  .advertising__image {
+    bottom: 0;
+  }
+
+  .advertising__button {
+    width: 245px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advertising {
+    position: static;
+  }
+
+  .advertising__wrapper {
+    width: $desktop-width;
+  }
+
+  .advertising__image {
+    bottom: 70px;
   }
 }

@@ -1,0 +1,15 @@
+.cat-programm__wrapper {
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-programm__wrapper {
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-programm__wrapper {
+    padding-bottom: 82px;
+  }
+}

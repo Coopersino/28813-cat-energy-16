@@ -12,21 +12,30 @@
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
-
   list-style-type: none;
 }
-//additional-products__item
+
+.additional-products__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 23px 20px;
+  border-bottom: 1px solid #ededed;
+}
 
 .additional-products__title {
   margin: 0;
   margin-bottom: 10px;
-
   font-weight: 400;
   font-size: 16px;
   color: #000000;
   text-transform: uppercase;
 }
-//additional-products__desc
+
+.additional-products__desc {
+  width: 50%;
+}
+
 //additional-products__price
 //additional-products__button button
 
@@ -39,7 +48,6 @@
   margin: 0 auto;
   padding-top: 65px;
   padding-bottom: 20px;
-
   background: #70b447 url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
@@ -47,7 +55,6 @@
 .additional-products__gift-slogan {
   max-width: 165px;
   margin: 0;
-
   font-size: 16px;
   line-height: 1.25;
   font-family: $secondary-font;

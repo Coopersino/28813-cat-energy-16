@@ -2,3 +2,41 @@
 //page-footer__wrapper
 //page-footer-social
 //page-footer__copyright
+.page-footer {
+  background: $color-gray;
+}
+
+.page-footer__wrapper {
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+}
+
+.page-footer__social {
+  margin-top: 31px;
+  margin-right: auto;
+  margin-bottom: 22px;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-right: 30px;
+    padding-bottom: 62px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
