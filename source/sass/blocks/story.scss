@@ -4,25 +4,29 @@
 }
 
 .story__wrapper {
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 30px 20px 0 20px;
+  // padding-top: 30px;
+  // padding-right: 20px;
+  // padding-left: 20px;
   overflow: hidden;
 }
 
+.story__inner {
+  margin-bottom: 40px;
+}
+
 .story__title {
+  margin: 0 0 30px;
   font-size: 36px;
   line-height: 60px;
-  margin: 0;
-  margin-bottom: 30px;
   font-weight: 400;
   color: #000000;
 }
 
 .story__text {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: left;
+  // font-size: 14px;
+  // line-height: 18px;
+  // text-align: left;
   font-family: $secondary-font;
 }
 
@@ -30,6 +34,12 @@
   width: 100%;
   border-collapse: collapse;
   border: 0;
+}
+
+.story__facts-list tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .story__fact {
@@ -52,8 +62,9 @@
     top: 44px;
     left: 50%;
     width: 87px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 0 16px 0 16px;
+    // padding-right: 16px;
+    // padding-left: 16px;
     text-align: center;
     text-transform: lowercase;
     background: $color-gray;
@@ -68,5 +79,133 @@
   }
 }
 
+.story__fact-amount {
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+}
 
+.story__fact-name {
+  line-height: 1;
+  font-family: $secondary-font;
+}
 //story__slider
+.story__fact--cost {
+  width: 190px;
+  margin: 0 auto;
+
+  .story__fact-name,
+  .story__fact-amount {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Oswald", Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+    background: transparent;
+  }
+
+  .story__wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .story__inner {
+    margin-bottom: 80px;
+  }
+
+  .story__title {
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .story__text {
+    margin: 0 0 55px;
+  }
+
+  .story__fact--cell {
+    width: 22.88%;
+    margin-right: 42px;
+    margin-bottom: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    .story__fact-amount {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .story__fact-name {
+      top: 67px;
+      width: auto;
+      max-width: 150px;
+      padding-right: 8px;
+      padding-left: 8px;
+      white-space: nowrap;
+      background: #fff;
+    }
+  }
+
+  .story__fact--cost {
+    flex-direction: column;
+    margin: 0 0 0 auto;
+
+    .story__fact-name {
+      font-size: 20px;
+      line-height: 1;
+      text-align: right;
+    }
+
+    .story__fact-amount {
+      font-size: 20px;
+      line-height: 1;
+      text-align: right;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .story {
+    background-image: linear-gradient(
+      to bottom, #ffffff 190px, transparent 190px),
+      linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
+  }
+
+  .story__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .story__inner {
+    width: 450px;
+    padding-top: 55px;
+  }
+
+  .story__title {
+    margin-bottom: 138px;
+  }
+
+  .story__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .story__fact--cell {
+    width: 162px;
+  }
+
+  .story__fact--cell {
+    .story__fact-name {
+      background-color: $color-gray;
+    }
+  }
+}

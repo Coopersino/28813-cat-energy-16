@@ -1,12 +1,13 @@
-// .contacts {
+.contacts {
+  background: #f2f2f2;
+}
 
-// }
+.contacts--main-page {
+  background: none;
+}
 //contacts--main-page
 .contacts__wrapper {
-  padding-top: 28px;
-  padding-right: 20px;
-  padding-bottom: 28px;
-  padding-left: 20px;
+  padding: 28px 20px;
 }
 
 .contacts__address {

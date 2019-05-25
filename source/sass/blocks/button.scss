@@ -1,13 +1,47 @@
+// .button {
+//   display: block;
+//   width: 280px;
+//   background-color: #68b738;
+//   text-align: center;
+//   font-size: 14px;
+//   line-height: 18px;
+//   color: white;
+//   padding-top: 14px;
+//   padding-bottom: 11px;
+//   text-transform: uppercase;
+// }
+
+
 .button {
   display: block;
-  width: 280px;
-  background-color: #68b738;
+  padding-top: 13px;
+  padding-bottom: 13px;
   text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  color: white;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  background: $color-accent;
+  border: 0;
+  outline: 0;
+  transition: all ease 0.1s;
+
+  &:hover {
+    background: $color-accent-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
-//button--show-all
+
+.button--show-all {
+  color: #444;
+  background: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 1;
+  }
+}

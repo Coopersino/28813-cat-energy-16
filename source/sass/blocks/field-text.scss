@@ -1,0 +1,128 @@
+.field-text {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 14px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .field-text__input {
+      padding-right: 40px;
+    }
+  }
+
+  &--phone-number {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+
+    .field-text__input {
+      padding-right: 40px;
+    }
+  }
+
+  &--textarea {
+    .field-text__input {
+      height: 150px;
+      resize: none;
+    }
+  }
+}
+
+.field-text__label {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 1.12;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.field-text__input {
+  flex-grow: 1;
+  padding: 13px;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  transition: all ease 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-width: 1px;
+    border-color: #444444;
+    box-shadow: 0 0 0 1px inset #444444;
+  }
+
+  &:focus + .field-text__input-icon {
+    fill: $color-accent;
+  }
+}
+
+.field-text__input-icon {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone-number {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-text,
+  .field-text--email {
+    margin-bottom: 20px;
+  }
+
+  .field-text__label,
+  .field-text__input {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .field-text__input {
+    padding: 10px 19px;
+  }
+
+  .field-text__input-icon {
+    &--mail {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text--email {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .field-text--phone-number {
+    width: 570px;
+  }
+}
