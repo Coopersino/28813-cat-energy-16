@@ -1,15 +1,14 @@
-//main-nav
-//main-nav__toggle
-//main_nav__wrapper
-//main-nav__list
 .main-nav__wrapper {
   position: relative;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.main-nav__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 80px);
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .main-nav__toggle {
@@ -21,6 +20,69 @@
   height: 18px;
   border: none;
   cursor: pointer;
+  font-size: 0;
+}
+
+.main-nav--closed {
+  .main-nav__toggle {
+    background: url("../img/icon-mobile-menu.svg") no-repeat center;
+  }
+}
+
+.main-nav--opened {
+  .main-nav__toggle {
+    background: url("../img/icon-close.svg") no-repeat center;
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    visibility: hidden;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__logo-image {
+    width: 219px;
+    height: 38px;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +90,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-nav__logo {
+    justify-content: flex-start;
+    width: 192px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .main-nav__logo-image {
+    margin-right: 18px;
   }
 
   .main-nav__toggle {
@@ -38,5 +111,54 @@
     display: flex;
     flex-wrap: wrap;
     width: 465px;
+  }
+
+  .main-nav__item {
+    border-top: none;
+  }
+
+  .main-nav__link {
+    margin-left: 24px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+
+    &--active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background: $color-accent;
+      }
+    }
+  }
+
+  .main-nav__link[href] {
+    transition: opacity ease 0.1s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--index-page {
+    .main-nav__link {
+      color: #ffffff;
+    }
+
+    .main-nav__link--active::before {
+      background: #ffffff;
+    }
   }
 }

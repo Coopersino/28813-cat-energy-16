@@ -10,6 +10,11 @@
     z-index: -1;
     height: 305px;
     background: $color-index-bg url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -23,12 +28,17 @@
   color: $color-white;
   font-size: 36px;
   text-align: center;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
+  width: 250px;
+  margin: 0 auto 25px;
 }
 
 .advertising__slogan {
-  line-height: 14px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1;
   font-size: 14px;
   text-transform: uppercase;
   color: $color-white;
@@ -43,7 +53,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advertising::before {
+    display: none;
+  }
+
   .advertising__wrapper {
+    position: relative;
     padding-right: 120px;
     padding-bottom: 530px;
     padding-left: 120px;
@@ -51,10 +66,14 @@
 
   .advertising__title {
     width: 427px;
+    margin-left: 0;
+    font-size: 60px;
+    text-align: left;
     color: $color-black;
   }
 
   .advertising__slogan {
+    margin-bottom: 45px;
     font-size: 20px;
     text-align: left;
     color: $color-black;
@@ -62,6 +81,7 @@
 
   .advertising__image {
     bottom: 0;
+    position: absolute;
   }
 
   .advertising__button {
@@ -69,6 +89,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    line-height: 1;
   }
 }
 
@@ -79,9 +103,16 @@
 
   .advertising__wrapper {
     width: $desktop-width;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 230px;
   }
 
   .advertising__image {
     bottom: 70px;
+    left: 492px;
+    transform: none;
   }
 }

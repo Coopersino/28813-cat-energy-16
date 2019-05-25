@@ -1,6 +1,14 @@
 //page-header
 //page-header__wrapper
-//page-header__logo
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 80px);
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
 .page-header__logo-image {
   width: 33px;
   height: 38px;

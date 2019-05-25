@@ -2,14 +2,55 @@
   padding-bottom: 30px;
 }
 
+.cat-programm__header {
+  margin-bottom: 38px;
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.cat-programm__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet-width) {
   .cat-programm__wrapper {
     padding-bottom: 72px;
+  }
+
+  .cat-programm__header {
+    margin: 0;
+    margin-bottom: 66px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .cat-programm__slogan {
+    width: 380px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cat-programm__wrapper {
     padding-bottom: 82px;
+  }
+
+  .cat-programm__header {
+    max-width: $desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .cat-programm__slogan {
+    padding-left: 0;
   }
 }
