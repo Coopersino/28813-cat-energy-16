@@ -1,26 +1,3 @@
-//page-form
-//page-form__fieldset
-//page-form__fieldset--user-info
-//page-form__fieldset-wrapper
-//page-form__fieldset-list
-//page-form__fieldset-field  field-text
-//page-form__label  field-text__label
-//page-form__input  field-text__input
-//page-form__fieldset--user-task
-//field-radio
-//page-form__fieldset--contacts
-//page-form__input-icone--email
-//field-text--phone-number
-//page-form__input-icone--phone-number
-//page-form__fieldset--comments
-//page-form__title
-//page-form__fieldset-wrapper
-//field-text__input
-//page-form__fieldset
-//page-form__fieldset--additional
-//field-checkbox
-//page-form__action
-// field-actions
 .page-form__fieldset {
   padding: 20px;
   border: none;
@@ -179,23 +156,7 @@
   .page-form__title {
     width: 100%;
     padding: 0 calc((100% - 1300px) / 2);
-    // &::before {
-    // background-image: linear-gradient(to bottom, transparent 22px, #68b738 22px, #68b738 25px, transparent 25px);
-    // }
   }
-
-
-    // span {
-    //   padding-right: 41px;
-    //   padding-left: 41px;
-    //   background-color: #ffffff;
-    // }
-
-    // &::before,
-    // &::after {
-    //   display: none;
-    // }
-  // }
 
   .page-form__fieldset--comments {
     width: auto;

@@ -10,6 +10,7 @@
     z-index: -1;
     height: 305px;
     background: $color-index-bg url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
       background-size: 320px auto;

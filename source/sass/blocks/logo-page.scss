@@ -1,34 +1,12 @@
-// //logo-footer
-// //logo-footer__image
-
-// .logo-footer {
-//   display: block;
-
-//   .logo-footer__image {
-//     margin: 0 auto;
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .logo-footer {
-//     transition: opacity ease 0.3s;
-
-//     &:hover {
-//       opacity: 0.6;
-//     }
-//   }
-// }
-
 .logo-page-header {
   .logo-page-header__image {
-    // width: 33px;
     height: 38px;
   }
 
   .logo-page-header__title {
     width: 101px;
     height: 18px;
-    margin-right: calc((100% - 320px)/2 + 77px);
+    margin-right: calc((100% - 320px) / 2 + 77px);
     margin-left: auto;
   }
 }

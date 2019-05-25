@@ -12,7 +12,7 @@
 }
 
 .field-checkbox__input:checked + .field-checkbox__input-element,
-.field-checkbox__input:checked + .field-checkbox__input-element  + .field-checkbox__text {
+.field-checkbox__input:checked + .field-checkbox__input-element + .field-checkbox__text {
   opacity: 0.3;
 }
 
@@ -23,7 +23,7 @@
   transition: all ease 0.1s;
 
   &:hover {
-    .field-checkbox__input-element  {
+    .field-checkbox__input-element {
       border-color: #bababa;
     }
   }
@@ -36,7 +36,6 @@
   width: 30px;
   height: 30px;
   margin-right: 16px;
-
   border: 1px solid #cdcdcd;
 }
 

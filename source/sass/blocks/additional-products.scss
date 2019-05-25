@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
-  color: #000;
+  color: #000000;
 }
 
 .additional-products__block-title::after {
@@ -36,7 +36,7 @@
   list-style-type: none;
 }
 
-.additional-products__item  {
+.additional-products__item {
   padding-top: 14px;
   padding-bottom: 17px;
   border-bottom: 1px solid #cdcdcd;
@@ -170,7 +170,7 @@
     width: auto;
     min-height: 200px;
     padding: 72px 124px 72px 90px;
-    background-image: url(../../img/gift-photo-tablet@1x.jpg);
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
     background-position: center;
     background-size: cover;
   }
