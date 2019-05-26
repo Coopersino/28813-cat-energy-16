@@ -171,11 +171,16 @@
 
 @media (min-width: $desktop-width) {
   .story {
-    background-image: linear-gradient (
-      to bottom,
-      #ffffff 190px,
-      transparent 190px),
-      linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
+      background-image: linear-gradient(
+        to bottom,
+        #fff 190px,
+        transparent 190px),
+        linear-gradient(to right,#f2f2f2 50%,#eaeaea 50%);
+  }
+
+  .story__facts-list tbody {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .story__wrapper {
@@ -208,5 +213,18 @@
     .story__fact-name {
       background-color: $color-gray;
     }
+  }
+
+  .story__fact--cost {
+      flex-direction: row;
+      width: auto;
+      margin-top: 50px;
+      margin-left: 0;
+  }
+
+  .story__fact--cost {
+    .story__fact-name {
+      margin-right: 66px;
+  }
   }
 }
