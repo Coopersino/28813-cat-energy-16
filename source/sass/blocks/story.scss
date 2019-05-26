@@ -5,9 +5,6 @@
 
 .story__wrapper {
   padding: 30px 20px 0 20px;
-  // padding-top: 30px;
-  // padding-right: 20px;
-  // padding-left: 20px;
   overflow: hidden;
 }
 
@@ -24,9 +21,6 @@
 }
 
 .story__text {
-  // font-size: 14px;
-  // line-height: 18px;
-  // text-align: left;
   font-family: $secondary-font;
 }
 
@@ -63,8 +57,6 @@
     left: 50%;
     width: 87px;
     padding: 0 16px 0 16px;
-    // padding-right: 16px;
-    // padding-left: 16px;
     text-align: center;
     text-transform: lowercase;
     background: $color-gray;
@@ -89,7 +81,7 @@
   line-height: 1;
   font-family: $secondary-font;
 }
-//story__slider
+
 .story__fact--cost {
   width: 190px;
   margin: 0 auto;
@@ -171,11 +163,13 @@
 
 @media (min-width: $desktop-width) {
   .story {
-    background-image: linear-gradient (
-      to bottom,
-      #ffffff 190px,
-      transparent 190px),
-      linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
+    background-image: linear-gradient(to bottom, #ffffff 190px, transparent 190px),
+      linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .story__facts-list tbody {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .story__wrapper {
@@ -207,6 +201,17 @@
 
     .story__fact-name {
       background-color: $color-gray;
+    }
+  }
+
+  .story__fact--cost {
+    flex-direction: row;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 0;
+
+    .story__fact-name {
+      margin-right: 66px;
     }
   }
 }
