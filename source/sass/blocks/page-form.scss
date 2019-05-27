@@ -92,7 +92,7 @@
       margin-top: 23px;
       margin-right: 41px;
       margin-left: -30px;
-      background: $color-accent;
+      background: #68b738;
     }
 
     &::after {
@@ -156,6 +156,18 @@
   .page-form__title {
     width: 100%;
     padding: 0 calc((100% - 1300px) / 2);
+    background-image: linear-gradient(to bottom, transparent 22px, #68b738 22px, #68b738 25px, transparent 25px);
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    span {
+      padding-right: 41px;
+      padding-left: 41px;
+      background-color: #ffffff;
+    }
   }
 
   .page-form__fieldset--comments {

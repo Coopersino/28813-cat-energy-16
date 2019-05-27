@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -22,24 +22,22 @@
                   height="38" alt="Кэт Энерджи">
               </picture>
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню
-            </button>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list  site-list">
-              <li class="site-list__item main-nav__item">
-                <a class="site-list__link main-nav__link" href="index.html">Главная</a>
+              <li class="site-list__item  main-nav__item">
+                <a class="site-list__link  main-nav__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item main-nav__item">
-                <a class="site-list__link main-nav__link" href="catalog.html">Каталог продукции</a>
+              <li class="site-list__item  main-nav__item">
+                <a class="site-list__link  main-nav__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item  main-nav__item site-list__item--active ">
-                <a class="site-list__link main-nav__link main-nav__link--active" href="#">Подбор программы</a>
+                <a class="site-list__link  main-nav__link main-nav__link--active" href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-
     <main class="page-main">
       <section class="cat-programm">
         <div class="cat-programm__wrapper">
@@ -102,7 +100,8 @@
               </fieldset>
             </div>
             <fieldset class="page-form__fieldset  page-form__fieldset--contacts">
-              <h2 class="page-form__title">Контактные данные (владельца кота)
+              <h2 class="page-form__title">
+                <span>Контактные данные (владельца кота)</span>
               </h2>
               <div class="page-form__fieldset-wrapper">
                 <ul class="page-form__fieldset-list">
@@ -110,65 +109,76 @@
                     <label class="page-form__label  field-text__label" for="email">E-mail</label>
                     <input class="page-form__input  field-text__input" type="email" name="email" id="email"
                       placeholder="kuklachev@gmail.com">
-                    <img class="page-form__input-icone  page-form__input-icone--email" src="http://placehold.it/20x20"
-                      width="20" height="20">
+                    <svg class="field-text__input-icon  field-text__input-icon--email" width="17" height="13">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
                   </li>
                   <li class="page-form__fieldset-field  field-text--phone-number">
                     <label class="page-form__label  field-text__label" for="phone-number">Телефон</label>
                     <input class="page-form__input  field-text__input" type="tel" name="phone-number" id="phone-number"
                       placeholder="8 (960) 900-60-90">
-                    <img class="page-form__input-icone  page-form__input-icone--phone-number"
-                      src="http://placehold.it/20x20" width="20" height="20">
+                    <svg class="field-text__input-icon  field-text__input-icon--phone-number" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="page-form__fieldset  field-text  field-text--textarea  page-form__fieldset--comments">
-              <h2 class="page-form__title">Комментарий</h2>
+            <fieldset class="page-form__fieldset  field-text--textarea  page-form__fieldset--comments">
+              <h2 class="page-form__title"><span>Комментарий</span></h2>
               <div class="page-form__fieldset-wrapper  field-text  field-text--textarea">
                 <textarea class="field-text__input" name="comment" id="comment"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="page-form__fieldset  page-form__fieldset--additional">
-              <h2 class="page-form__title">Дополнительно</h2>
+              <h2 class="page-form__title"><span>Дополнительно</span></h2>
               <div class="page-form__fieldset-wrapper">
                 <ul class="page-form__fieldset-list">
                   <li class="page-form__fieldset-field  field-checkbox">
                     <label class="page-form__label  field-checkbox__label" for="sugar">
-                      <input class="page-form__input  field-checkbox__input visually-hidden" type="checkbox" name="sugar" id="sugar"
-                        checked>
+                      <input class="page-form__input  field-checkbox__input visually-hidden" type="checkbox"
+                        name="sugar" id="sugar" checked>
                       <span class="field-checkbox__input-element">
-                        <img src="img/icon-tick.svg" class="field-checkbox__icon">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                       </span>
                       <span class="field-checkbox__text">Сахарозаменитель</span>
                     </label>
-
                   </li>
                   <li class="page-form__fieldset-field  field-checkbox">
                     <label class="page-form__label  field-checkbox__label" for="water">
-                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox" name="water" id="water">
+                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox"
+                        name="water" id="water">
                       <span class="field-checkbox__input-element">
-                        <img src="img/icon-tick.svg" class="field-checkbox__icon">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                       </span>
                       <span class="field-checkbox__text">Питьевая вода</span>
                     </label>
                   </li>
                   <li class="page-form__fieldset-field  field-checkbox">
                     <label class="page-form__label  field-checkbox__label" for="milk">
-                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox" name="milk" id="milk">
+                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox"
+                        name="milk" id="milk">
                       <span class="field-checkbox__input-element">
-                        <img src="img/icon-tick.svg" class="field-checkbox__icon">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                       </span>
                       <span class="field-checkbox__text">Молоко</span>
                     </label>
                   </li>
                   <li class="page-form__fieldset-field  field-checkbox">
                     <label class="page-form__label  field-checkbox__label" for="vitamins">
-                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox" name="vitamins"
-                        id="vitamins">
+                      <input class="page-form__input  field-checkbox__input  visually-hidden" type="checkbox"
+                        name="vitamins" id="vitamins">
                       <span class="field-checkbox__input-element">
-                        <img src="img/icon-tick.svg" class="field-checkbox__icon">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                       </span>
                       <span class="field-checkbox__text">Витамины</span>
                     </label>
@@ -180,7 +190,6 @@
               <button class="field-actions__button  button" type="submit">Отправить заявку</button>
               <p class="field-actions__text"> * — Обязательные поля</p>
             </div>
-
           </form>
         </div>
       </section>
@@ -199,35 +208,43 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="logo-page-footer" href="#">
-            <img class="logo-page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="logo">
-          </a>
+          <img class="logo-page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="logo">
+        </a>
         <ul class="page-footer__social  social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img class="social__icone  social__icone--vk" src="img/icon-vk-mobile.svg">
+              <svg class="social__icone  social__icone--vk" width="30" height="15">
+                <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy">
-              <img class="social__icone  social__icone--inst" src="img/icon-insta-mobile.svg">
+              <svg class="social__icone  social__icone--inst" width="23" height="23">
+                <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
-              <img class="social__icone  social__icone--fb" src="img/icon-fb-mobile.svg">
+              <svg class="social__icone  social__icone--fb" width="13" height="27">
+                <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <a class="page-footer__copyright  copyright" href="https://htmlacademy.ru">
           <span class="copyright__name">HTML Academy</span>
-          <img class="copyright__icone" src="http://placehold.it/27x34">
+          <svg class="copyright__icone" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>
   </div>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
