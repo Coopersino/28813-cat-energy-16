@@ -30,7 +30,10 @@
   }
 
   .case__link-icone {
-    margin-left: 121px;
+    width: 24px;
+    height: 11px;
+    margin-left: 12px;
+    fill: #3e4242;
   }
 }
 
@@ -61,11 +64,10 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.case__link-icone {
+.case__icone {
   position: absolute;
   width: 24px;
   height: 11px;
-  margin-left: 95px;
   fill: #3e4242;
 
   &--slim {
@@ -114,7 +116,7 @@
     line-height: 1;
   }
 
-  .case__link-icone {
+  .case__icone {
     &--slim {
       top: 75px;
       right: 87px;
@@ -170,7 +172,7 @@
     height: 100px;
   }
 
-  .case__link-icone {
+  .case__icone {
     &--slim {
       top: 46px;
       right: unset;
