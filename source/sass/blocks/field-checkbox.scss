@@ -27,6 +27,13 @@
       border-color: #bababa;
     }
   }
+
+  &:focus,
+  &:active {
+    border-color: #bababa;
+    outline: 1px dotted #444444;
+    outline-offset: 3px;
+  }
 }
 
 .field-checkbox__input-element {

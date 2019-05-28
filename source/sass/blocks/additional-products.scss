@@ -79,6 +79,11 @@
   padding-bottom: 20px;
   background: #70b447 url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .additional-products__gift-pic {
@@ -248,6 +253,11 @@
     width: 245px;
     padding: 65px 43px 42px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 
   .additional-products__gift-pic {

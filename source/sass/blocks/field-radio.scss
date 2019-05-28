@@ -28,6 +28,13 @@
   &:hover {
     opacity: 0.6;
   }
+
+  &:focus,
+  &:active {
+    border-color: #bababa;
+    outline: 1px dotted #444444;
+    outline-offset: 3px;
+  }
 }
 
 .field-radio__input-element {
