@@ -1,6 +1,7 @@
 .logo-page-header {
   .logo-page-header__image {
     height: 38px;
+    margin-left: -10px;
   }
 
   .logo-page-header__title {
@@ -22,6 +23,7 @@
 @media (min-width: $tablet-width) {
   .logo-page-header {
     transition: opacity ease 0.3s;
+    margin-left: 10px;
 
     &:hover {
       opacity: 0.8;

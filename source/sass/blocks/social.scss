@@ -5,7 +5,7 @@
   width: 280px;
   padding-top: 22px;
   padding-right: 41px;
-  padding-bottom: 22px;
+  padding-bottom: 14px;
   padding-left: 62px;
   list-style-type: none;
   border-top: 1px solid #d9d9d9;
@@ -30,18 +30,36 @@
   fill: #666666;
 
   &--vk {
-    width: 30px;
+    // width: 30px;
+    // height: 15px;
+
+    width: 21px;
     height: 15px;
+    position: relative;
+    left: 11px;
+    top: -3px;
   }
 
   &--inst {
-    width: 23px;
+    // width: 23px;
+    // height: 23px;
+
+    width: 16px;
     height: 23px;
+    position: relative;
+    top: -2px;
+    left: 12px;
   }
 
   &--fb {
-    width: 13px;
+    // width: 13px;
+    // height: 27px;
+
+    width: 10px;
     height: 27px;
+    position: relative;
+    left: 15px;
+    top: -3px;
   }
 }
 
@@ -74,6 +92,31 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__icone {
+    &--vk {
+      width: 41px;
+      height: 16px;
+      left: -4px;
+      top: -6px;
+    }
+
+    &--inst {
+      width: 22px;
+      height: 23px;
+      top: -5px;
+      left: -9px;
+    }
+
+    &--fb {
+      width: 17px;
+      height: 27px;
+      left: -10px;
+      top: -5px;
     }
   }
 }

@@ -117,6 +117,11 @@
     padding-left: 40px;
   }
 
+  .advantages__title {
+    margin-top: 43px;
+    margin-bottom: 73px;
+  }
+
   .advantages__list {
     justify-content: flex-start;
   }
@@ -136,7 +141,12 @@
     }
 
     &::after {
-      right: 0;
+      right: 7px;
     }
+  }
+
+  .advantage__text {
+    margin-top: 13px;
+    line-height: 23px;
   }
 }

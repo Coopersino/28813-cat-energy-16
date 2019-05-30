@@ -1,10 +1,11 @@
 .story {
   overflow: hidden;
   background: $color-gray;
+  padding-bottom: 35px;
 }
 
 .story__wrapper {
-  padding: 30px 20px 0 20px;
+  padding: 16px 20px 0 20px;
   overflow: hidden;
 }
 
@@ -13,7 +14,7 @@
 }
 
 .story__title {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -21,6 +22,7 @@
 }
 
 .story__text {
+  margin-bottom: 24px;
   font-family: $secondary-font;
 }
 
@@ -52,6 +54,7 @@
   border-radius: 3px;
 
   .story__fact-name {
+    font-size: 13px;
     position: absolute;
     top: 44px;
     left: 50%;
@@ -93,6 +96,7 @@
     font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
     text-transform: uppercase;
+    margin-top: -2px;
   }
 }
 
@@ -184,11 +188,11 @@
 
   .story__inner {
     width: 450px;
-    padding-top: 55px;
+    padding-top: 19px;
   }
 
   .story__title {
-    margin-bottom: 138px;
+    margin-bottom: 151px;
   }
 
   .story__text {

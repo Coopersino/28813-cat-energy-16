@@ -31,7 +31,7 @@
   line-height: 1;
   font-weight: 400;
   width: 250px;
-  margin: 0 auto 25px;
+  margin: -9px auto 25px;
 }
 
 .advertising__slogan {
@@ -42,9 +42,11 @@
   font-size: 14px;
   text-transform: uppercase;
   color: $color-white;
+  padding-right: 2px;
 }
 
 .advertising__image {
+  padding-top: 11px;
   margin: 0 auto;
 }
 
@@ -101,6 +103,11 @@
     position: static;
   }
 
+  .advertising__title {
+    margin-top: -52px;
+    margin-bottom: 27px;
+  }
+
   .advertising__wrapper {
     width: $desktop-width;
     margin-right: auto;
@@ -114,5 +121,15 @@
     bottom: 70px;
     left: 492px;
     transform: none;
+  }
+
+  .advertising__slogan {
+    position: relative;
+    top: 14px;
+  }
+
+  .advertising__button {
+    position: relative;
+    top: 24px;
   }
 }

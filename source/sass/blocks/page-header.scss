@@ -19,11 +19,15 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
+    padding-bottom: 51px;
     border-bottom: none;
+    margin-top: 10px;
+    margin-bottom: -8px;
   }
 
   .page-header__wrapper {
+    // margin-top: 11px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -31,7 +35,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 54px;
+    // padding-top: 54px;
+    padding-top: 46px;
+    padding-left: 19px;
+    margin-bottom: 7px;
   }
 
   .page-header__wrapper {

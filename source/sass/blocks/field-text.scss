@@ -13,6 +13,8 @@
     align-items: baseline;
     margin-bottom: 14px;
 
+    // margin-bottom: 19px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -41,11 +43,19 @@
 }
 
 .field-text__label {
+  // margin-right: 15px;
+  // font-size: 16px;
+  // line-height: 1.12;
+  // color: #222222;
+  // text-transform: uppercase;
+
   margin-right: 15px;
   font-size: 16px;
   line-height: 1.12;
   color: #222222;
   text-transform: uppercase;
+  margin-left: -3px;
+  /* margin-top: 5px; */
 }
 
 .field-text__input {
@@ -89,9 +99,26 @@
 }
 
 @media (min-width: $tablet-width) {
+
+
   .field-text,
   .field-text--email {
     margin-bottom: 20px;
+
+    .field-text__input {
+      margin-left: 15px;
+      padding-right: 40px;
+    }
+  }
+
+
+  .field-text--phone-number {
+    margin-bottom: 20px;
+
+    .field-text__input {
+      margin-left: 10px;
+      padding-right: 40px;
+    }
   }
 
   .field-text__label,
@@ -125,5 +152,14 @@
 
   .field-text--phone-number {
     width: 570px;
+  }
+
+  .field-text--textarea {
+    .field-text__input {
+    margin-top: 9px;
+    margin-left: 2px;
+    min-height: 39px;
+    padding: 18px;
+    }
   }
 }

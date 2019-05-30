@@ -7,14 +7,22 @@
 }
 
 .content-title--product-catalog {
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  border-bottom: 1px solid #ededed;
+  // padding-right: 20px;
+  // padding-bottom: 30px;
+  // padding-left: 20px;
+  // border-bottom: 1px solid #ededed;
+
+  // padding-top: -6px;
+    padding-right: 21px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ededed;
+    margin-top: -12px;
 }
 
 .content-title--cat-programm {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  margin-top: -13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,7 +33,7 @@
   }
 
   .content-title--cat-programm {
-    margin-bottom: 42px;
+    margin-bottom: 55px;
     font-size: 60px;
     line-height: 1;
   }

@@ -1,11 +1,13 @@
 .field-actions {
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 15px;
 }
 
 .field-actions__button {
   width: 100%;
   margin-bottom: 22px;
+  font-size: 16px;
 }
 
 .field-actions__text {
@@ -43,10 +45,23 @@
     margin: 0 auto;
     padding-right: 40px;
     padding-left: 40px;
+    margin-bottom: -40px;
   }
 
   .field-actions__button {
-    width: 570px;
-    margin-right: 80px;
+    // width: 570px;
+    // margin-right: 80px;
+    position: relative;
+    top: -22px;
+    width: 567px;
+    margin-right: 82px;
+    font-size: 20px;
+    margin-left: 5px;
+    padding: 16px;
+  }
+
+  .field-actions__text {
+    position: relative;
+    top: -22px;
   }
 }

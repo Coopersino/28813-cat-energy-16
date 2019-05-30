@@ -133,8 +133,6 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest(paths.images.dest));
 });
 
-gulp.task("start", gulp.series("css", "sprite", "server"));
-
 // Копирование файлов
 gulp.task("copy", function  () {
   return gulp.src([
@@ -157,3 +155,5 @@ gulp.task("build", gulp.series(
   "sprite",
   "html"
 ));
+
+gulp.task("start", gulp.series("build", "server"));

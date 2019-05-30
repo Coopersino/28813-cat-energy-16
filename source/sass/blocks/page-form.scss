@@ -1,3 +1,7 @@
+.page-form__content-wrapper {
+  margin-bottom: 9px;
+}
+
 .page-form__fieldset {
   padding: 20px;
   border: none;
@@ -11,6 +15,14 @@
   &--user-task {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  &--comments {
+    margin-top: -7px;
+  }
+
+  &--additional {
+    margin-top: -8px;
+  }
 }
 
 .page-form__fieldset-list {
@@ -22,7 +34,7 @@
 .page-form__title {
   display: flex;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -58,17 +70,43 @@
     }
 
     &--user-task {
-      margin-right: 34px;
-      margin-left: 34px;
-      padding: 24px 27px;
+      // margin-right: 34px;
+      // margin-left: 34px;
+      // padding: 24px 27px;
+      // border: 1px solid #dedede;
+
+      margin-right: 37px;
+      margin-left: 40px;
+      padding: 24px 32px;
       border: 1px solid #dedede;
+
+      .page-form__fieldset-wrapper {
+        // padding-right: 35px;
+        padding-left: 0;
+      }
     }
 
-    &--contacts,
-    &--comments,
+    &--contacts {
+      padding-right: 29px;
+      padding-left: 38px;
+
+      .page-form__fieldset-wrapper {
+        padding-top: 10px;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+    }
+
+    &--comments {
+      padding-right: 29px;
+      padding-left: 38px;
+    }
+
     &--additional {
-      padding-right: 30px;
-      padding-left: 30px;
+      // padding-right: 30px;
+      // padding-left: 30px;
+      padding-right: 29px;
+      padding-left: 38px;
     }
   }
 
@@ -107,8 +145,13 @@
   }
 
   .page-form__fieldset-wrapper {
-    padding-right: 35px;
-    padding-left: 35px;
+    // padding-left: 44px;
+    // padding-right: 44px;
+
+    padding-left: 47px;
+    padding-right: 36px;
+    // padding-right: 35px;
+    // padding-left: 35px;
   }
 }
 
@@ -140,6 +183,7 @@
   .page-form__fieldset--contacts {
     width: auto;
     padding: 0;
+    margin-bottom: 46px;
 
     .page-form__fieldset-list {
       display: flex;
@@ -171,13 +215,27 @@
   }
 
   .page-form__fieldset--comments {
+    // width: auto;
+    // padding: 0;
     width: auto;
     padding: 0;
+    margin-bottom: 102px;
   }
 
   .page-form__fieldset--additional {
     width: auto;
     padding: 0;
+
+    margin-bottom: 38px;
+
+    .page-form__title {
+      margin-top: -14px;
+      margin-bottom: 60px;
+    }
+
+    .page-form__fieldset-wrapper {
+      padding-bottom: 12px;
+    }
 
     .page-form__fieldset-list {
       display: flex;
