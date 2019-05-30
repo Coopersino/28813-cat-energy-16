@@ -99,8 +99,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-
   .field-text,
   .field-text--email {
     margin-bottom: 20px;
@@ -156,10 +154,10 @@
 
   .field-text--textarea {
     .field-text__input {
-    margin-top: 9px;
-    margin-left: 2px;
-    min-height: 39px;
-    padding: 18px;
+      margin-top: 9px;
+      margin-left: 2px;
+      min-height: 39px;
+      padding: 18px;
     }
   }
 }

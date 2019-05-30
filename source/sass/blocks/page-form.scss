@@ -103,19 +103,16 @@
     }
 
     &--additional {
+      margin-bottom: 54px;
       // padding-right: 30px;
       // padding-left: 30px;
       padding-right: 29px;
       padding-left: 38px;
-    }
-  }
 
-  .page-form__fieldset--additional {
-    margin-bottom: 54px;
-
-    .page-form__fieldset-list {
-      display: flex;
-      flex-wrap: wrap;
+      .page-form__fieldset-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -215,8 +212,6 @@
   }
 
   .page-form__fieldset--comments {
-    // width: auto;
-    // padding: 0;
     width: auto;
     padding: 0;
     margin-bottom: 102px;
@@ -225,7 +220,6 @@
   .page-form__fieldset--additional {
     width: auto;
     padding: 0;
-
     margin-bottom: 38px;
 
     .page-form__title {

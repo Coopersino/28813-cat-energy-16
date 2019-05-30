@@ -166,7 +166,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav__list {
     width: 467px;
   }
@@ -175,12 +174,9 @@
     border-top: none;
     margin-right: 3px;
 
-    &:first-child{
+    &:first-child {
       margin-left: -45px;
     }
-  }
-
-  .main-nav__item {
 
     &:last-child {
       margin-right: 0;
